@@ -59,7 +59,7 @@ class CSV_cleaner:
                     ouput_file.flush()
 
 
-    def parse_html(self, html_text):
+    def parse_html(self, html_text) -> str:
 
         parsed_A = BeautifulSoup(html_text, 'html.parser').get_text()
         return  parsed_A
