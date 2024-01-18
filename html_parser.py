@@ -64,10 +64,12 @@ class CSV_cleaner:
         parsed_A = BeautifulSoup(html_text, 'html.parser').get_text()
         return  parsed_A
 
-    
-cleaner = CSV_cleaner('ReporteRedmine556204 - pipes.txt')
 
-cleaner.clean_csv()
+if __name__ == '__main__':    
+    cleaner = CSV_cleaner('ReporteRedmine556204 - pipes.txt')
+
+    cleaner.clean_csv()
+
 
         
 
